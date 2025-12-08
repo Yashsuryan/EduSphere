@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+* {
+  font-family: Outfit;
+}
+
+@utility text-home-heading-large{
+  @apply text-[48px]
+}
+
+@utility text-home-heading-small{
+  @apply text-[28px]
+}
+
+@utility course-details-heading-small{
+  @apply text-[26px]
+}
+
+@utility course-details-heading-large{
+  @apply text-[36px]
+}
+
+@layer utilities {
+  .grid-auto {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
